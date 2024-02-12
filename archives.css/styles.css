@@ -47,6 +47,10 @@ body{
     animation: moverArriba 2s ease-in-out infinite;
 }
 
+.foto{
+    animation: mover 2s ease-in-out forwards;
+}
+
 @keyframes moverArriba {
     0% {
         transform: translateY(0);
@@ -56,6 +60,15 @@ body{
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
 
