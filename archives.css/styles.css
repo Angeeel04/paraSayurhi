@@ -1,0 +1,65 @@
+@font-face {
+    font-family: fuente1;
+    src: url('/archives.css/LilitaOne-Regular.ttf');
+}
+
+body{
+    background-image: url('../mutimedia/background.jpg');
+    font-family: fuente1, sans-serif;
+}
+
+.boton{
+    font-family: fuente1, sans-serif;
+    margin-top: 100px;
+    border:3px solid black;
+    background-color: pink;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+    font-size: 40px;
+    width: 400px;
+    height: 100px;
+}
+
+.boton:hover{
+    background-color: rgb(237, 154, 154);
+}
+.cartita{
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    background-color: khaki;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;;
+}
+
+.flores{
+    float: right;
+    margin-top: 50px;
+    margin-right: 200px;
+    animation: moverArriba 2s ease-in-out infinite;
+}
+
+@keyframes moverArriba {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .cartita{
+        width: 50px;
+    }
+}
