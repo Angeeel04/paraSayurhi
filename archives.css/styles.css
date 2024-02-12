@@ -10,6 +10,7 @@
 body{
     background-image: url('../mutimedia/background.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: fuente1, sans-serif;
 }
 
@@ -47,8 +48,17 @@ body{
     animation: moverArriba 2s ease-in-out infinite;
 }
 
-.foto{
-    animation: mover 2s ease-in-out forwards;
+#foto1{
+    transform: rotate(45deg);
+    animation: mover1 2s ease-in-out forwards;
+}
+
+#foto2{
+    animation: mover2 2s ease-in-out forwards;
+}
+
+#foto3{
+    animation: mover3 2s ease-in-out forwards;
 }
 
 @keyframes moverArriba {
@@ -60,15 +70,6 @@ body{
     }
     100% {
         transform: translateY(0);
-    }
-}
-
-@keyframes mover {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0%);
     }
 }
 
@@ -90,12 +91,11 @@ body{
 
     body {
         font-size: 14px;
-        width: auto;
-        height: auto;
     }
 
     .cartita{
         width: 345px;
+        height: 700px;
         margin-left: 13px;
     }
 
@@ -122,11 +122,11 @@ body{
 
     body {
         font-size: 12px;
-        width: auto;
     }
 
     .cartita{
         width: 290px;
+        height: 790px;
         margin-left: 15px;
     }
 
