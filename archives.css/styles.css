@@ -49,15 +49,19 @@ body{
 }
 
 #foto1{
-    transform: rotate(45deg);
+    transform: rotate(-25deg);
+    z-index: 0;
     animation: mover1 2s ease-in-out forwards;
 }
 
 #foto2{
+    z-index: 1;
     animation: mover2 2s ease-in-out forwards;
 }
 
 #foto3{
+    transform: rotate(25deg);
+    z-index: 0;
     animation: mover3 2s ease-in-out forwards;
 }
 
@@ -73,10 +77,14 @@ body{
     }
 }
 
-@media (max-width: 426px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 10px;
+    }
+
     .pagPrincipal{
         margin-top: 120px;
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .texto{
@@ -89,23 +97,23 @@ body{
         margin-left: -40px;
     }
 
-    body {
-        font-size: 14px;
-    }
-
     .cartita{
-        width: 345px;
-        height: 700px;
+        width: 300px;
+        height: 760px;
         margin-left: 13px;
     }
 
     .flores{
         width: 200px;
-        margin-right: 105px;
+        margin-right: 130px;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 426px) {
+
+}
+
+/*@media (max-width: 376px) {
     .pagPrincipal{
         margin-top: 120px;
     }
@@ -133,5 +141,4 @@ body{
     .flores{
         width: 200px;
         margin-right: 75px;
-    }
-}
+    }*/
