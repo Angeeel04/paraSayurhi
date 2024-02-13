@@ -48,23 +48,6 @@ body{
     animation: moverArriba 2s ease-in-out infinite;
 }
 
-#foto1{
-    transform: rotate(-25deg);
-    z-index: 0;
-    animation: mover1 2s ease-in-out forwards;
-}
-
-#foto2{
-    z-index: 1;
-    animation: mover2 2s ease-in-out forwards;
-}
-
-#foto3{
-    transform: rotate(25deg);
-    z-index: 0;
-    animation: mover3 2s ease-in-out forwards;
-}
-
 @keyframes moverArriba {
     0% {
         transform: translateY(0);
