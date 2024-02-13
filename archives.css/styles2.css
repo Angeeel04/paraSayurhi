@@ -6,7 +6,6 @@
 body{
     background-image: url('../mutimedia/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     font-family: fuente1, sans-serif;
 }
 
@@ -27,7 +26,7 @@ body, html {
 .lastDiv{
     width: auto;
     font-size: 40px; 
-    margin-top: -140px;
+    margin-top: -160px;
     display: flex; 
     justify-content: center;
     align-items: center;
